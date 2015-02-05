@@ -48,7 +48,7 @@ class Postgresql < Formula
 
     args << "--with-ossp-uuid" if build.with? 'ossp-uuid'
     args << "--with-perl" unless build.include? 'no-perl'
-    args << "--with-tcl" unless build.include? 'no-tcl'
+#    args << "--with-tcl" unless build.include? 'no-tcl'
     args << "--enable-dtrace" if build.include? 'enable-dtrace'
 
     if build.with? 'ossp-uuid'
